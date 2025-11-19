@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal profile -  your name</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 2.0;
+            background-color:bisque;
+            color: brown;
+        }
+        .card{
+            max-width: 1000px;
+            margin: 24px auto;
+            background-color: azure;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,1.0);
+        }
+        header{
+            display: flex;
+            gap: 20px;
+            align-items:center;
+        }
+        img.profile{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5%;
+            border: 5px solid #020c0b;
+            box-shadow: 0 0 10px royalblue;
+        }
+        h1{
+            margin: 0;
+            font-size: 3.0rem;
+            font-style:inherit;
+            text-shadow: 0 0 5px rgb(198, 9, 240);
+        }
+        p.lead{
+            margin-top: 10px;
+            color: rgb(198, 9, 240);
+        }
+        ul.hobbies{
+            margin: 0px;
+        }
+        footer{
+            margin-top: 50px;
+            font-size: 0.8rem;
+        }
+        a.button{
+            display: inline-flex;
+            padding: 8px 120px;
+            background-color: rgb(177, 130, 222);
+            color: aliceblue;
+            margin-right: 8px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <header>
+            <img class="profile" src="data:image/jpeg;base64,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" alt="sorry image failed">
+        
+        <div>
+            <h1>RUDRAKSH GUPTA</h1>
+            <p class="lead"><u>A short bio</u>: I'm a web enthusiast learning HTML and building small projects. I enjoy turning ideas into simple, clean web pages.</P>
+            <p><strong>Location:</strong> Ghaziabad , Uttarpradesh , India</p>
+        </div>
+        </header>
+        <section>
+            <h2>Hobbies</h2>
+            <p>Here are somethings i like to do:</p>
+            <ul class ="hobbies">
+                <li>creating small web project.</li>
+                <li>reading history</li>
+                <li>reading constitution</li>
+                <li>reading geography</li>
+                <li>travelling</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contacts & links</h2>
+            <p>if you like my work follow me on the link : </p>
+            <p>
+                <a class = "button" href="https://github.com/235ics044-user" target="_blank" rel="noopener">Github</a>
+                <a class ="button" href="https://www.linkedin.com/in/rudraksh-gupta-466774371/" target="_blank" rel="noopener">Linkedin</a>
+            </p>
+        </section>
+        <footer>
+            <p>made with ❤️ - last updated : <time datetime="2025-11-18">18 november, 2025</time> </p>
+        </footer>
+    </main>
+    
+</body>
+</html>
